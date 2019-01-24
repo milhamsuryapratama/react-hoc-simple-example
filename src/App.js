@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Username from './components/Username';
+import Hoc from './components/Hoc';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const Uppercase = Hoc(Username)
+
+const App = () => {
+  return (
+    <div>
+      <Uppercase>m. ilham surya pratama</Uppercase>
+    </div>
+  )
 }
 
 export default App;
