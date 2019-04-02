@@ -9,7 +9,7 @@ const Uppercase = Hoc(Username)
 const App = () => {
   return (
     <div>
-      <Uppercase>m. ilham surya pratama</Uppercase>
+      <Uppercase>m. ilham surya pratama dan hais batara</Uppercase>
     </div>
   )
 }
